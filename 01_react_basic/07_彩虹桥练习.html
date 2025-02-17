@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- CDN引入，依赖三个包：react、react-dom、babel -->
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <script src="./lib/babel.js"></script>
+
+    <script type="text/babel">
+      const root = ReactDOM.createRoot(document.querySelector("#root"));
+      //彩虹数组
+      const colorList = [
+        { id: 1, color: "red" },
+        { id: 2, color: "orange" },
+        { id: 3, color: "yellow" },
+        { id: 4, color: "green" },
+        { id: 5, color: "blue" },
+        { id: 6, color: "indigo" },
+        { id: 7, color: "violet" },
+      ];
+      //颜色样式
+      let textColor = "";
+      //定义一个点击次数变量
+      let clickNum = 0;
+
+      //设置点击事件
+      const btnClick = () => {
+        //当点击时，修改textColor数据，7次一循环
+        textColor = colorList[clickNum % colorList.length].color;
+        //点击次数
+        clickNum++;
+
+        //重新渲染
+        rootRender();
+      };
+
+      //封装一个渲染函数
+      const rootRender = () => {
+        root.render(
+          <div>
+            <h2 style={{ color: textColor }}>你已经点击了{clickNum}次</h2>
+            <button onClick={btnClick}>点击我变成彩虹🌈</button>
+            {clickNum >= 7 ? (
+              <div>你触发隐藏成就：成为彩虹大师！</div>
+            ) : (
+              <div></div>
+            )}
+          </div>
+        );
+      };
+      rootRender();
+    </script>
+  </body>
+</html>

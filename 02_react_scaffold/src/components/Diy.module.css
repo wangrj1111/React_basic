@@ -1,0 +1,49 @@
+/* Diy.module.css */
+.container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.welcome {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.fruit-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fruit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fruit-item button {
+  background-color: #dc3545;
+}
+
+.fruit-item button:hover {
+  background-color: #c82333;
+}
