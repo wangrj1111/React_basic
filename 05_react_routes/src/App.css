@@ -1,0 +1,104 @@
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+nav a.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* 添加垂直导航样式 */
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px; /* 添加圆角 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.vertical-nav a {
+  width: 100%; /* 确保导航项宽度占满 */
+  text-align: left; /* 文本左对齐 */
+  padding: 10px;
+  border-radius: 4px; /* 添加圆角 */
+  transition: background-color 0.3s;
+}
+
+.vertical-nav a:hover {
+  background-color: #e0e0e0;
+}
+
+.vertical-nav a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 添加 profile-container 和 content-area 样式 */
+.profile-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* 根据需要调整最大宽度 */
+  margin: 0 auto; /* 使内容居中 */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px; /* 添加圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.profile-container .vertical-nav {
+  width: 200px; /* 导航栏宽度 */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.profile-container .content-area {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 20px; /* 调整内容区域与导航栏之间的间距 */
+}
+
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.site-form-item-icon {
+  color: rgba(0, 0, 0, 0.25);
+}
