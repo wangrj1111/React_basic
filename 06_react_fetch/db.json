@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "深入理解Webpack模块打包原理",
+      "body": "Webpack是现代前端工程化中最重要的构建工具之一。本文深入探讨Webpack的模块打包机制，包括依赖图谱的构建过程、代码分割策略、Tree Shaking原理等核心概念。通过实例讲解如何优化打包配置，提高构建性能和输出质量。同时介绍热模块替换（HMR）的实现原理，以及如何在实际项目中配置开发环境。",
+      "image": "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg",
+      "author": "张文浩",
+      "date": "2024-01-15"
+    },
+    {
+      "id": "2",
+      "title": "Vite：下一代前端构建工具的革新",
+      "body": "Vite凭借其极速的开发服务器启动和热更新能力，正在改变前端开发体验。本文详细解析Vite的核心特性，包括基于ESM的开发服务器、按需编译策略、优化的构建流程等。同时对比Webpack，分析Vite在现代前端工程中的优势和适用场景，并提供最佳实践指南。",
+      "image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+      "author": "李思琪",
+      "date": "2024-01-14"
+    },
+    {
+      "id": "3",
+      "title": "Babel插件开发指南",
+      "body": "Babel作为JavaScript编译器，在前端工程化中扮演着关键角色。本文将指导读者如何开发自定义Babel插件，包括抽象语法树（AST）的操作、转换规则的编写、插件测试等内容。通过实际案例，展示如何实现代码的自动转换和优化。",
+      "image": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg",
+      "author": "王建林",
+      "date": "2024-01-13"
+    },
+    {
+      "id": "4",
+      "title": "前端工程化中的自动化测试策略",
+      "body": "自动化测试是保证前端工程质量的重要手段。本文介绍主流的测试框架和工具，包括Jest、Testing Library、Cypress等，详细讲解单元测试、集成测试和端到端测试的实施方法。同时探讨测试驱动开发（TDD）在前端项目中的实践经验。",
+      "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
+      "author": "陈明华",
+      "date": "2024-01-12"
+    },
+    {
+      "id": "5",
+      "title": "现代化的前端CI/CD实践",
+      "body": "持续集成和持续部署（CI/CD）是前端工程化的重要组成部分。本文分享基于GitHub Actions的自动化工作流配置，包括代码检查、测试运行、构建发布等环节的自动化实现。同时介绍如何结合Docker容器化技术，构建稳定可靠的部署流程。",
+      "image": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg",
+      "author": "刘德华",
+      "date": "2024-01-11"
+    },
+    {
+      "id": "6",
+      "title": "前端工程化中的性能优化实践",
+      "body": "性能优化是前端工程化中的永恒主题。本文系统讲解构建层面的优化策略，包括代码分割、懒加载、资源压缩、缓存优化等技术点。同时分享性能监控和分析工具的使用方法，帮助开发者建立完整的性能优化体系。",
+      "image": "https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg",
+      "author": "周杰伦",
+      "date": "2024-01-10"
+    },
+    {
+      "id": "7",
+      "title": "Monorepo项目的最佳实践",
+      "body": "Monorepo架构在大型前端项目中越来越受欢迎。本文详细介绍基于pnpm+Turborepo的Monorepo实践，包括工作空间配置、依赖管理、构建优化等关键点。同时分享大型项目中采用Monorepo的经验和注意事项。",
+      "image": "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg",
+      "author": "张学友",
+      "date": "2024-01-09"
+    },
+    {
+      "id": "8",
+      "title": "ESLint插件开发教程",
+      "body": "ESLint是现代前端项目中不可或缺的代码质量工具。本文将指导读者如何开发自定义ESLint规则和插件，包括AST选择器的使用、规则测试、配置项设计等内容。通过实例展示如何实现团队特定的代码规范检查。",
+      "image": "https://images.pexels.com/photos/1181674/pexels-photo-1181674.jpeg",
+      "author": "黎明",
+      "date": "2024-01-08"
+    },
+    {
+      "id": "9",
+      "title": "前端工程化中的微前端实践",
+      "body": "微前端架构能够帮助大型应用实现更好的解耦和团队协作。本文介绍基于Module Federation的微前端实现方案，包括应用间通信、路由管理、共享依赖等技术要点。同时分享微前端架构在实际项目中的落地经验。",
+      "image": "https://images.pexels.com/photos/1181672/pexels-photo-1181672.jpeg",
+      "author": "郭富城",
+      "date": "2024-01-07"
+    },
+    {
+      "id": "10",
+      "title": "现代化的前端依赖管理",
+      "body": "依赖管理是前端工程化的基础环节。本文深入探讨npm、yarn、pnpm等包管理工具的特点和最佳实践，包括依赖锁定、版本控制、安全审计等内容。同时介绍如何处理依赖冲突和优化安装性能。",
+      "image": "https://images.pexels.com/photos/1181678/pexels-photo-1181678.jpeg",
+      "author": "黄家驹",
+      "date": "2024-01-06"
+    }
+  ]
+}

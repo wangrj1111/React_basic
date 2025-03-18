@@ -1,0 +1,76 @@
+.movie-detail-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.movie-detail-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.back-button {
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.movie-detail-image {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.movie-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-detail-info {
+  color: #333;
+}
+
+.movie-detail-info h1 {
+  margin: 0 0 15px 0;
+  font-size: 1.8em;
+  color: #1a1a1a;
+}
+
+.movie-detail-meta {
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.movie-detail-description {
+  margin-bottom: 20px;
+}
+
+.movie-detail-description p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+}
+
+.movie-detail-source {
+  font-size: 0.9em;
+  color: #888;
+}

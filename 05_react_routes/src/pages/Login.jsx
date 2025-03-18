@@ -15,7 +15,7 @@ const Login = () => {
     const user = LoginInfo.find(u => u.username === values.username && u.password === values.password);
     if (user) {
       localStorage.setItem('user', JSON.stringify(user));
-      navigate('/dashboard');
+      navigate('/');
     } else {
       alert('账号或密码错误');
     }

@@ -1,5 +1,5 @@
 // src/routes/index.jsx
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import NotFound from "../pages/NotFound";
@@ -10,19 +10,20 @@ import Fans from "../pages/dashboard/Fans";
 import Follow from "../pages/dashboard/Follow";
 import Login from "../pages/Login";
 import Book from "../pages/Book";
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 import BlogDetail from "../pages/BlogDetail";
 
 const AppRoutes = () => {
-  const location = useLocation();
 
   return (
     <>
-      {location.pathname !== '/login' && <NavBar />}
+
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Layout />} >
+        <Route index element={<Home />}/>
         <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
         <Route path="/book/:bookId" element={<Book />} />
         <Route path="/blog/:blogIndex" element={<BlogDetail />} />
         <Route path="/dashboard" element={<Dashboard />}>
@@ -34,7 +35,7 @@ const AppRoutes = () => {
           </Route>
           <Route path="setting" element={<Setting />} />
         </Route>
-        <Route path="/login" element={<Login />} />
+      </Route>
       </Routes>
     </>
   );
